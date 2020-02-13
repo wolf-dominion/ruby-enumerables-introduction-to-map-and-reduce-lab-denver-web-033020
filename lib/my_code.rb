@@ -57,6 +57,7 @@ def reduce_to_all_true(source_array)
       return test = "false"
     end
   end
+  puts "TEST IS #{test}"
   test
 end
 
