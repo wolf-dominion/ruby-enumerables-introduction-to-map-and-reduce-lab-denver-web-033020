@@ -47,17 +47,15 @@ end
 def reduce_to_all_true(source_array)
 
   puts source_array
-  test = "truthy value"
+  test = true
   count = 0
   
   while count < source_array.length
-    if source_array[count] == true 
-    count += 1
-    else
-      return test = "false"
+    if source_array[count] == false
+      test = false
     end
+    count += 1
   end
-  puts "TEST IS #{test}"
   test
 end
 
